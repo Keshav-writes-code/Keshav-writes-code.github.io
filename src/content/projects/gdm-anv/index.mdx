@@ -1,0 +1,42 @@
+---
+title: "GDM & Anv"
+summary: "A Website for the Music Production Buisness"
+date: "Nov 1, 2024"
+draft: false
+tags:
+  - Astro
+  - Typescript
+  - Unocss
+  - Daisyui
+  - Svelte
+demoUrl: https://gdm-anvpro.vercel.app
+---
+
+import { Image } from "astro:assets";
+import landingPage1stSection from "./landing-page-1st-section.webp";
+import landingPage2ndSection_mobile from "./landing-page-2nd-section-mobile.webp";
+import landingPage3rdSection_mobile from "./landing-page-3rd-section.webp";
+
+GDM & Anv is a Music Production Buisness ran by Me. My Goal with the Landing Page was to be Very Fancy and Futuristic Looking
+
+## Demos
+
+<div>
+  <Image
+    src={landingPage1stSection}
+    alt="Landing Page of GDM & Anv"
+    class="w-full"
+  />
+  <div class="grid grid-cols-2 ">
+    <Image
+      src={landingPage2ndSection_mobile}
+      alt="Music Player Section of GDM & Anv"
+      class="size-full "
+    />
+    <Image
+      src={landingPage3rdSection_mobile}
+      alt="Music Player Section of GDM & Anv"
+      class="size-full"
+    />
+  </div>
+</div>
