@@ -1,0 +1,59 @@
+---
+title: "Edscale's Web Application"
+summary: "built an full stack Web Application for Edscale"
+date: "May 27, 2026"
+draft: false
+tags:
+  - Webapp
+demoUrl: https://www.edscale.in/
+---
+
+import { Image } from "astro:assets";
+import demo1 from "./demo1.png"
+import demo2 from "./demo2.png"
+import demo3 from "./demo3.png"
+import demo4 from "./demo4.png"
+import demo5 from "./demo5.png"
+
+## Motivation
+
+I wanted to explore MLOps tooling outside of the Python ecosystem. Rust's performance and reliability make it an interesting choice for building ML pipelines — so I built a gold price forecasting tool end-to-end in Rust, from data ingestion to a web-based prediction UI.
+
+## How It Works
+
+The project uses a **linear regression model** trained on historical gold prices in INR. Given a date range, it fits the model on the historical data and extrapolates to generate future price forecasts.
+
+**Key components:**
+- **Data pipeline** — ingests and preprocesses historical gold price data
+- **Linear regression model** — trained in Rust, outputs predicted prices over a user-defined forecast window
+- **Web UI** — a dark-themed dashboard for visualizing price history and forecasts, with interactive date range controls
+
+## Demos
+
+<div>
+  <Image
+    src={demo1}
+    alt="Web UI showing gold price history and forecast chart with date range controls"
+    class="w-full"
+  />
+  <Image
+    src={demo2}
+    alt="Raw historical gold price dataset plotted over time"
+    class="w-full"
+  />
+  <Image
+    src={demo3}
+    alt="Raw historical gold price dataset plotted over time"
+    class="w-full"
+  />
+  <Image
+    src={demo4}
+    alt="Raw historical gold price dataset plotted over time"
+    class="w-full"
+  />
+  <Image
+    src={demo5}
+    alt="Raw historical gold price dataset plotted over time"
+    class="w-full"
+  />
+</div>
